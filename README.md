@@ -1,2 +1,1 @@
-# custom-qrc
-QR image generator
+# Zoomph QR generator
