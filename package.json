@@ -1,5 +1,5 @@
 {
-  "name": "zoomph-qrc",
+  "name": "custom-qrc",
   "version": "0.0.1",
   "description": "QR generator.",
   "main": "server.js",
@@ -14,13 +14,10 @@
     "stream": "^0.0.2"
   },
   "engines": {
-    "node": "12.x"
+    "node": "^16.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/zoomph-qrc"
-  },
-  "glitch": {
-    "projectType": "generated_static"
   },
   "license": "MIT",
   "keywords": [
