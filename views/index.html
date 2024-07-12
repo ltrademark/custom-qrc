@@ -1,0 +1,38 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>Zoomph QR</title>
+
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h3>Usage</h3>
+      <code>https://zoomph-qrc.glitch.me/qrcode?data=[<em>url|text</em>]</code>
+      <h3>Sample</h3>
+      <img src="https://zoomph-qrc.glitch.me/qrcode?data=https://zoomph.com" />
+      <hr />
+      <h3>Specific Usage: 2fa</h3>
+      <p>Use the URL schema below and replace the content inside `[ ]` and append it at the end of the <code class="inline">qrcode?data=</code> url above.</p>
+      <code>otpauth://totp/[<em>App Name</em>]:[<em>Email</em>]?secret=[<em>Base32 Hash</em>]&issuer=[<em>Issuer</em>]</code>
+      <h4>Related Links</h4>
+      <ul>
+        <li><a href="https://craftsmen.nl/secure-your-own-application-with-two-factor-authentication/" target="_blank">Secure your own application with 2fa</a></li>
+        <li><a href="https://github.com/google/google-authenticator/wiki/Key-Uri-Format" target="_blank">Key URI format</a></li>
+        <li><a href="https://docs.yubico.com/yesdk/users-manual/application-oath/uri-string-format.html" target="_blank">oAuth URI String Format</a></li>
+      </ul>
+    </section>
+  </body>
+</html>
